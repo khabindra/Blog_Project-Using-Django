@@ -23,12 +23,12 @@ header h1 a {
 .post-entry{
     margin-bottom: 2 rem;
 }
-.post-entry h1{
+.post-entry h2{
     margin: 0.5 rem 0;
 }
 
-.post-entry h1,
-.post-entry h1 a:visited {
+.post-entry h2,
+.post-entry h2 a:visited {
     color: blue;
     text-decoration: none;
 }
@@ -36,6 +36,6 @@ header h1 a {
     margin:0;
     font-weight: 400px;
 }
-.post-entry h1 a:hover{
+.post-entry h2 a:hover{
     color: red;
 }
