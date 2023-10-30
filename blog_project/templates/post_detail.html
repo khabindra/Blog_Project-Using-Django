@@ -7,10 +7,14 @@
         <p class="lead">{{ object.body }}</p>
     </div>
 </div>
-<a href="{% url 'post_edit' post.pk %}" >+Edit Blog Post</a>
-<div class="container mt-4">
-    <a href="{% url 'home' %}" class="btn btn-secondary">Back to Home</a>
+
+<div class="container mt-4 text-center">
+    <a href="{% url 'post_edit' post.pk %}" class="btn btn-primary">Edit Blog Post</a>
+    <a href="{% url 'post_delete' post.pk %}" class="btn btn-primary">Delete Blog Post</a>
 </div>
 
+<div class="container mt-4 text-center">
+    <a href="{% url 'home' %}" class="btn btn-secondary">Back to Home</a>
+</div>
 
 {% endblock %}
