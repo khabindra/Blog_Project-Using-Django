@@ -1,9 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="post-entry">
-    <h2>{{object.title}}</h2>
-    <p>{{object.body}}</p>
+<div class="container mt-4">
+    <div class="post-entry">
+        <h2 class="display-4">{{ object.title }}</h2>
+        <p class="lead">{{ object.body }}</p>
+    </div>
 </div>
-{% endblock %}
+<a href="{% url 'post_edit' post.pk %}" >+Edit Blog Post</a>
+<div class="container mt-4">
+    <a href="{% url 'home' %}" class="btn btn-secondary">Back to Home</a>
+</div>
 
+
+{% endblock %}
